@@ -169,19 +169,19 @@ var tocTool2 = 'Nhấp để sắp xếp theo ngày';
 var tocHead3 = 'Thể loại';
 var tocTool3 = '';
 if (sortBy == "titleasc") { 
-   tocTool1 += ' (giảm dần)';
+   tocTool1 += ' (z-a)';
    tocTool2 += ' (mới nhất)';
 }
 if (sortBy == "titledesc") { 
-   tocTool1 += ' (tăng dần)';
+   tocTool1 += ' (a-z)';
    tocTool2 += ' (mới nhất)';
 }
 if (sortBy == "dateoldest") { 
-   tocTool1 += ' (tăng dần)';
+   tocTool1 += ' (a-z)';
    tocTool2 += ' (mới nhất)';
 }
 if (sortBy == "datenewest") { 
-   tocTool1 += ' (tăng dần)';
+   tocTool1 += ' (a-z)';
    tocTool2 += ' (cũ nhất)';
 }
 if (postFilter != '') {
