@@ -73,7 +73,7 @@ function getPostData() {
          var pll = '';
          if ("category" in entry) {
             for (var k = 0; k < entry.category.length; k++) {
-               pll += '<a href="javascript:filterPosts(\'' + entry.category[k].term + '\');" title="Click here to select all posts with label \'' + entry.category[k].term + '\'">' + entry.category[k].term + '</a>,  ';
+               pll += '<a href="javascript:filterPosts(\'' + entry.category[k].term + '\');" title="Nhấp vào đây để hiển thị các bài đăng thuộc thể loại \'' + entry.category[k].term + '\'">' + entry.category[k].term + '</a>,  ';
             }
          var l = pll.lastIndexOf(',');
          if (l != -1) { pll = pll.substring(0,l); }
@@ -162,30 +162,30 @@ function displayToc(filter) {
 // this function creates a three-column table and adds it to the screen
 var numDisplayed = 0;
 var tocTable = '';
-var tocHead1 = 'Tên bài viết';
-var tocTool1 = 'Click to sort by title';
+var tocHead1 = 'Tiêu đề bài viết';
+var tocTool1 = 'Nhấp để sắp xếp theo tiêu đề';
 var tocHead2 = 'Thời gian đăng';
-var tocTool2 = 'Click to sort by date';
+var tocTool2 = 'Nhấp để sắp xếp theo ngày';
 var tocHead3 = 'Thể loại';
 var tocTool3 = '';
 if (sortBy == "titleasc") { 
-   tocTool1 += ' (descending)';
-   tocTool2 += ' (newest first)';
+   tocTool1 += ' (giảm dần)';
+   tocTool2 += ' (mới nhất)';
 }
 if (sortBy == "titledesc") { 
-   tocTool1 += ' (ascending)';
-   tocTool2 += ' (newest first)';
+   tocTool1 += ' (tăng dần)';
+   tocTool2 += ' (mới nhất)';
 }
 if (sortBy == "dateoldest") { 
-   tocTool1 += ' (ascending)';
-   tocTool2 += ' (newest first)';
+   tocTool1 += ' (tăng dần)';
+   tocTool2 += ' (mới nhất)';
 }
 if (sortBy == "datenewest") { 
-   tocTool1 += ' (ascending)';
-   tocTool2 += ' (oldest first)';
+   tocTool1 += ' (tăng dần)';
+   tocTool2 += ' (cũ nhất)';
 }
 if (postFilter != '') {
-   tocTool3 = 'Click to show all posts';
+   tocTool3 = 'Nhấp để hiển thị tất cả các bài viết';
 }
 tocTable += '<table>';
 tocTable += '<tr>';
