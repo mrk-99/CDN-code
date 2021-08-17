@@ -213,10 +213,10 @@ for (var i = 0; i < postTitle.length; i++) {
 }
 tocTable += '</table>';
 if (numDisplayed == postTitle.length) {
-   var tocNote = '<span class="toc-note">Displaying all ' + postTitle.length + ' posts<br/></span>'; }
+   var tocNote = '<span class="toc-note">Hiển thị tất cả ' + postTitle.length + ' bài đăng<br/></span>'; }
 else {
-   var tocNote = '<span class="toc-note">Displaying ' + numDisplayed + ' posts labeled \'';
-   tocNote += postFilter + '\' of '+ postTitle.length + ' posts total<br/></span>';
+   var tocNote = '<span class="toc-note">Hiển thị ' + numDisplayed + ' bài đăng thuộc thể loại \'';
+   tocNote += postFilter + '\' trong tổng số '+ postTitle.length + ' bài đăng<br/></span>';
 }
 tocdiv.innerHTML = tocNote + tocTable;
 } // end of displayToc
